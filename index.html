@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema ABC</title>
 
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="resultado"></div>
+
+    <form id="miFormulario">
+
+        <div class="container">
+            <h1>Sistema ABC</h1>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" required id="nombre">
+
+            <label for="rfc">RFC:</label>
+            <input type="text" required id="rfc">
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion">
+
+            <label for="correo">Correo:</label>
+            <input type="email" required id="correo">
+
+            <div class="btnContainer">
+                <button type="button" onclick="alta()">Alta</button>
+                <button type="button" onclick="baja()">Baja</button>
+                <button type="button" onclick="consulta()">Consulta</button>
+            </div>
+            
+        </div>
+
+    </form>
+
+    <div id="altas"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
